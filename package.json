@@ -9,7 +9,7 @@
     "build:cloudflare": "vite build",
     "start": "NODE_ENV=production node dist/index.js",
     "preview": "vite preview --host",
-    "deploy": "pnpm run build:cloudflare && wrangler pages deploy dist/public",
+    "deploy": "pnpm run build:cloudflare && wrangler pages deploy dist/public --project-name=vespasian-audit-report",
     "check": "tsc --noEmit",
     "format": "prettier --write ."
   },
